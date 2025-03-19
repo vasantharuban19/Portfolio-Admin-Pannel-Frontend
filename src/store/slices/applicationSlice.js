@@ -72,7 +72,7 @@ export const getAllApplications = () => async (dispatch) => {
   dispatch(applicationSlice.actions.getAllApplicationsRequest());
   try {
     const response = await axios.get(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/softwareapplication/getall",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/softwareapplication/getall",
       { withCredentials: true }
     );
     dispatch(
@@ -94,7 +94,7 @@ export const addNewApplication = (data) => async (dispatch) => {
   dispatch(applicationSlice.actions.addNewApplicationsRequest());
   try {
     const response = await axios.post(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/softwareapplication/add",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/softwareapplication/add",
       data,
       {
         withCredentials: true,
@@ -119,7 +119,7 @@ export const deleteApplication = (id) => async (dispatch) => {
   dispatch(applicationSlice.actions.deleteApplicationsRequest());
   try {
     const response = await axios.delete(
-      `https://portfolio-backend-2sbb.onrender.com/api/v1/softwareapplication/delete/${id}`,
+      `https://portfolio-backend-rmjr.onrender.com/api/v1/softwareapplication/delete/${id}`,
       {
         withCredentials: true,
       }

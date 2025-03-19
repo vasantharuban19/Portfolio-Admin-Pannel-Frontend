@@ -115,7 +115,7 @@ export const login = (email, password) => async (dispacth) => {
   dispacth(userSlice.actions.loginRequest());
   try {
     const { data } = await axios.post(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/user/login",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/user/login",
       { email, password },
       { withCredentials: true, headers: { "Content-Type": "application/json" } }
     );
@@ -131,7 +131,7 @@ export const getUser = () => async (dispacth) => {
   dispacth(userSlice.actions.loadUserRequest());
   try {
     const { data } = await axios.get(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/user/me",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/user/me",
       {
         withCredentials: true,
       }
@@ -147,7 +147,7 @@ export const getUser = () => async (dispacth) => {
 export const logout = () => async (dispacth) => {
   try {
     const { data } = await axios.get(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/user/logout",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/user/logout",
       { withCredentials: true }
     );
     dispacth(userSlice.actions.logoutSuccess(data.message));
@@ -162,7 +162,7 @@ export const updatePassword =
     dispacth(userSlice.actions.updatePasswordRequest());
     try {
       const { data } = await axios.put(
-        "https://portfolio-backend-2sbb.onrender.com/api/v1/user//update/password",
+        "https://portfolio-backend-rmjr.onrender.com/api/v1/user//update/password",
         { currentPassword, newPassword, confirmNewPassword },
         {
           withCredentials: true,
@@ -182,7 +182,7 @@ export const updateProfile = (data) => async (dispacth) => {
   dispacth(userSlice.actions.updateProfileRequest());
   try {
     const response = await axios.put(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/user/update/me",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/user/update/me",
       data,
       {
         withCredentials: true,

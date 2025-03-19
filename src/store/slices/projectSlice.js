@@ -87,7 +87,7 @@ export const getAllProjects = () => async (dispatch) => {
   dispatch(projectSlice.actions.getAllProjectsRequest());
   try {
     const response = await axios.get(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/project/getall",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/project/getall",
       { withCredentials: true }
     );
     dispatch(
@@ -105,7 +105,7 @@ export const addNewProject = (data) => async (dispatch) => {
   dispatch(projectSlice.actions.addNewProjectRequest());
   try {
     const response = await axios.post(
-      "https://portfolio-backend-2sbb.onrender.com/api/v1/project/add",
+      "https://portfolio-backend-rmjr.onrender.com/api/v1/project/add",
       data,
       {
         withCredentials: true,
@@ -124,7 +124,7 @@ export const deleteProject = (id) => async (dispatch) => {
   dispatch(projectSlice.actions.deleteProjectRequest());
   try {
     const response = await axios.delete(
-      `https://portfolio-backend-2sbb.onrender.com/api/v1/project/delete/${id}`,
+      `https://portfolio-backend-rmjr.onrender.com/api/v1/project/delete/${id}`,
       {
         withCredentials: true,
       }
@@ -141,7 +141,7 @@ export const updateProject = (id, newData) => async (dispatch) => {
   dispatch(projectSlice.actions.updateProjectRequest());
   try {
     const response = await axios.put(
-      `https://portfolio-backend-2sbb.onrender.com/api/v1/project/update/${id}`,
+      `https://portfolio-backend-rmjr.onrender.com/api/v1/project/update/${id}`,
       newData,
       {
         withCredentials: true,
