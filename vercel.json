@@ -1,5 +1,4 @@
 {
-    "cleanUrls": true,
     "headers": [
         {
             "source": "/assets/(.*).js",
@@ -15,13 +14,6 @@
         {
             "source": "/(.*)",
             "destination": "/index.html"
-        }
-    ],
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "/index.html",
-            "statusCode": 200
         }
     ]
 }
