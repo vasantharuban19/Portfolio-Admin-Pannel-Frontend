@@ -1,20 +1,14 @@
 {
-    "headers": [
+    "routes": [
         {
-            "source": "/assets/*.js",
-            "headers": [
-                {
-                    "key": "Content-Type",
-                    "value": "application/javascript"
-                }
-            ]
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
         }
     ],
-    "redirects": [
+    "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html",
-            "statusCode": 200
+            "destination": "/"
         }
     ]
 }
