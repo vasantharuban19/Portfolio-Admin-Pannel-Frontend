@@ -130,7 +130,9 @@ const Dashboard = () => {
                 </CardHeader>
                 <CardFooter>
                   <Link to={user.portfolioURL} target="_blank">
-                    <Button>Visit Portfolio</Button>
+                    <Button className="bg-violet-900 hover:bg-violet-700">
+                      Visit Portfolio
+                    </Button>
                   </Link>
                 </CardFooter>
               </Card>
@@ -245,7 +247,10 @@ const Dashboard = () => {
                           <Card key={e._id}>
                             <CardHeader>{e.title}</CardHeader>
                             <CardFooter>
-                              <Progress value={e.proficiency} />
+                              <Progress
+                                className="bg-gray-300"
+                                value={e.proficiency}
+                              />
                             </CardFooter>
                           </Card>
                         );

@@ -113,8 +113,8 @@ const UpdateProfile = () => {
                       onChange={avatarHandler}
                       className="file:w-30 file:px-2 file:py-1.5 file:font-semibold 
              file:rounded-lg 
-             file:bg-orange-300 file:text-white file:cursor-pointer
-             hover:file:bg-orange-200 hover:file:text-black"
+             file:bg-orange-400 file:text-white file:cursor-pointer
+             hover:file:bg-orange-300 hover:file:text-black"
                     />
                   </div>
                 </div>
@@ -136,8 +136,8 @@ const UpdateProfile = () => {
                       onChange={resumeHandler}
                       className="file:w-30 file:px-2 file:py-1.5 file:font-semibold 
              file:rounded-lg 
-             file:bg-orange-300 file:text-white file:cursor-pointer
-             hover:file:bg-orange-200 hover:file:text-black"
+             file:bg-orange-400 file:text-white file:cursor-pointer
+             hover:file:bg-orange-300 hover:file:text-black"
                     />
                   </div>
                 </div>
