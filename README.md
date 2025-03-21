@@ -11,7 +11,6 @@ This project is built using **MongoDB, Express.js, React.js, and Node.js (MERN S
 ✅ **Admin Dashboard** – Manage portfolio content easily  
 ✅ **CRUD Operations** – Add, edit, delete projects, blogs, testimonials, and skills  
 ✅ **Authentication** – Secure login system using JWT (JSON Web Tokens)  
-✅ **Role-Based Access Control (RBAC)** – Restricts access to authorized users only  
 ✅ **Responsive UI** – Mobile-friendly with Tailwind CSS  
 ✅ **Redux Toolkit** – Efficient state management  
 ✅ **Backend with Express & MongoDB** – Handles API requests and database operations  
