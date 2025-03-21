@@ -36,7 +36,7 @@ This project is built using **MongoDB, Express.js, React.js, and Node.js (MERN S
 | **Axios**        | API Requests Handling            |
 | **Formik & Yup** | Form Handling & Validation       |
 | **React Router** | Client-Side Navigation           |
-| **Cloudinary / Multer** | File Upload Handling      |
+| **Cloudinary** | File Upload Handling      |
 | **Vercel**       | Frontend Deployment               |
 | **Render**       | Backend Deployment               |
 
