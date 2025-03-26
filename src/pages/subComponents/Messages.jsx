@@ -64,10 +64,8 @@ const Messages = () => {
                           {e.senderName}
                         </CardDescription>
                         <CardDescription className="text-slate-950">
-                          <span className="font-bold mr-2">
-                            Sender PhoneNo :
-                          </span>
-                          {e.senderPhoneNo}
+                          <span className="font-bold mr-2">Sender Email :</span>
+                          {e.senderEmail}
                         </CardDescription>
                         <CardDescription className="text-slate-950">
                           <span className="font-bold mr-2">Subject :</span>
