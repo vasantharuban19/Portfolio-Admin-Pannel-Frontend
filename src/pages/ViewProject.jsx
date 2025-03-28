@@ -22,8 +22,12 @@ const ViewProject = () => {
   const [projectLink, setProjectLink] = useState("");
   const [projectBanner, setProjectBanner] = useState("");
 
-  const descriptionList = description ? description.split("* ") : [];
-  const technologiesList = technologies ? technologies.split(". ") : [];
+  const descriptionList = description
+    ? description.split(/\*\s+/).filter((item) => item.trim() !== "")
+    : [];
+  const technologiesList = technologies
+    ? technologies.split(/\s*[\.\*]\s*/).filter((item) => item.trim() !== "")
+    : [];
 
   useEffect(() => {
     const getProject = async () => {
